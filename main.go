@@ -9,22 +9,13 @@ import (
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 
-const (
-	defaultGridSizeLat float64 = 0.00004291534423 * 3 // geohash9-height x3
-	defaultGridSizeLon float64 = 0.00004291534423 * 3 // geohash9-width x3
-)
-
 var (
-	total   = 0
-	failed  = 0
-	success = 0
-
 	minlat  = kingpin.Flag("minlat", "min lat").Required().Float64()
 	minlon  = kingpin.Flag("minlon", "min lon").Required().Float64()
 	maxlat  = kingpin.Flag("maxlat", "max lat").Required().Float64()
 	maxlon  = kingpin.Flag("maxlon", "max lon").Required().Float64()
-	sizelat = kingpin.Flag("size-lat", "grid size: height(lat)").Default(fmt.Sprintf("%v", defaultGridSizeLat)).Float64()
-	sizelon = kingpin.Flag("size-lon", "grid size: width(lon)").Default(fmt.Sprintf("%v", defaultGridSizeLon)).Float64()
+	sizelat = kingpin.Flag("gridsize-lat", "grid size: height(lat)").Required().Float64()
+	sizelon = kingpin.Flag("gridsize-lon", "grid size: width(lon)").Required().Float64()
 	outfile = kingpin.Flag("out", "output file").Required().String()
 )
 

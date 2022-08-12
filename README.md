@@ -3,7 +3,7 @@ gen-grids generates grids covering the given boundary box, and outputs the resul
 
 ## usage
 ```
-usage: gen-grids --minlat=MINLAT --minlon=MINLON --maxlat=MAXLAT --maxlon=MAXLON --out=OUT [<flags>]
+usage: gen-grids --minlat=MINLAT --minlon=MINLON --maxlat=MAXLAT --maxlon=MAXLON --gridsize-lat=GRIDSIZE-LAT --gridsize-lon=GRIDSIZE-LON --out=OUT [<flags>]
 
 Flags:
   -h, --help           Show context-sensitive help (also try --help-long and --help-man).
@@ -11,16 +11,16 @@ Flags:
       --minlon=MINLON  min lon
       --maxlat=MAXLAT  max lat
       --maxlon=MAXLON  max lon
-      --size-lat=0.00012874603269
+      --gridsize-lat=GRIDSIZE-LAT
                        grid size: height(lat)
-      --size-lon=0.00012874603269
+      --gridsize-lon=GRIDSIZE-LON
                        grid size: width(lon)
       --out=OUT        output file
 ```
 
 for example,
 ```shell
-$gen-grids --minlat=1.29200559 --minlon=103.81626719 --maxlat=1.30073960 --maxlon=103.83267501 --size-lat=0.0003 --size-lon=0.0003 --out=example.geojson
+$gen-grids --minlat=1.32998759 --minlon=103.81319278 --maxlat=1.33427187 --maxlon=103.81946325 --gridsize-lat=0.0003 --gridsize-lon=0.0003 --out=example.geojson
 ```
 [example](/example.geojson)\
-<img src="example.png" width=40% height=30% />
+<img src="example.png" width=40% />
