@@ -20,7 +20,7 @@ Flags:
 
 for example,
 ```shell
-$gen-grids --minlat=1.29200559 --minlon=103.81626719 --maxlat=1.30073960 --maxlon=103.83267501 --size-lat=0.00012874603269 --size-lon=0.00012874603269 --out=example.geojson
+$gen-grids --minlat=1.29200559 --minlon=103.81626719 --maxlat=1.30073960 --maxlon=103.83267501 --size-lat=0.0003 --size-lon=0.0003 --out=example.geojson
 ```
 [example](/example.geojson)\
 <img src="example.png" width=40% height=30% />
