@@ -29,23 +29,23 @@ func main() {
 		for lon := *minlon; lon < *maxlon; lon += *sizelon {
 			box := [][][]float64{
 				{
-					{
+					{ // left-bottom
 						lon,
 						lat,
 					},
-					{
+					{ // left-top
 						lon,
 						lat + *sizelat,
 					},
-					{
+					{ // right-top
 						lon + *sizelon,
 						lat + *sizelat,
 					},
-					{
+					{ // right-bottom
 						lon + *sizelon,
 						lat,
 					},
-					{
+					{ // left-bottom
 						lon,
 						lat,
 					},
