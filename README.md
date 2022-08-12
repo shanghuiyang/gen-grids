@@ -1,5 +1,5 @@
 # gen-grids
-gen-grids generates grids covering the given boundary box, and output the results to geojson file.
+gen-grids generates grids covering the given boundary box, and outputs the result to geojson file.
 
 ## usage
 ```
@@ -22,5 +22,5 @@ for example,
 ```shell
 $gen-grids --minlat=1.29200559 --minlon=103.81626719 --maxlat=1.30073960 --maxlon=103.83267501 --size-lat=0.00012874603269 --size-lon=0.00012874603269 --out=example.geojson
 ```
-[example](/example.geojson)
+[example](/example.geojson)\
 <img src="example.png" width=40% height=30% />
